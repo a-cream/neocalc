@@ -15,12 +15,9 @@ BinPackParameters: true
 BinPackArguments: true
 
 AlignTrailingComments: true
-AlignConsecutiveDeclarations: true
 AlignAfterOpenBracket: BlockIndent
 
 SpaceAfterCStyleCast: true
-IncludeBlocks: Regroup
 SortIncludes: true
 SpacesInParentheses: false
 PointerAlignment: Right
-RefrenceAlignment: Right

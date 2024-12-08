@@ -1,6 +1,7 @@
 Checks: >
   -*,
   readability-*,
+  -readability-identifier-length,
   bugprone-*,
   cert-*,
   clang-analyzer-*,
