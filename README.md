@@ -47,8 +47,6 @@ Acalc supports a wide range of mathematical operations through Exprtk, including
 - Arithmetic operations
 - Trigonometric functions
 - Logarithmic functions
-- Statistical calculations
-- Custom function definitions
 
 ## 🤝 Contributing
 
