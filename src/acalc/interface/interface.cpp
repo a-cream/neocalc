@@ -23,7 +23,7 @@ auto Interface::getInput() -> std::string {
 }
 
 void Interface::add(const std::string &command, const std::function<void()> &callback) {
-  m_commands[command] = [callback]() { callback(); };
+  m_commands[command] = callback;
 }
 
 void Interface::addHistory(const std::string &input) { m_history.push_back(input); }
