@@ -22,12 +22,15 @@ auto Interface::getInput() -> std::string {
   return input;
 }
 
-void Interface::add(const std::string &command, const std::function<void()> &callback) {
+void Interface::add(const std::string &command, const std::function<void()> &callback, const std::string &description) {
   m_commands[command] = callback;
+  m_aboutCommands[command] = description;
 }
 
 void Interface::addHistory(const std::string &input) { m_history.push_back(input); }
 
-auto Interface::history() const -> const std::vector<std::string> { return m_history; }
+auto Interface::history() const -> std::vector<std::string> { return m_history; }
 
-auto Interface::symbol() -> char { return m_symbol; }
+auto Interface::symbol() const -> char { return m_symbol; }
+
+auto Interface::aboutCommands() const -> std::map<std::string, std::string> { return m_aboutCommands; }

@@ -5,13 +5,37 @@ auto main() -> int {
   Interface interface(">", '@');
   Math<double> math;
 
-  interface.add("exit", []() { std::exit(0); });
-  interface.add("history", [&interface]() {
-    for (const std::string &command : interface.history()) {
-      std::cout << command << '\n';
-    }
-  });
-  interface.add("clear", []() { std::cout << "\033[2J\033[1;1H"; });
+  interface.add(
+      "exit", []() { std::exit(0); }, "Exits the program."
+  );
+  interface.add(
+      "history",
+      [&interface]() {
+        for (const std::string &command : interface.history()) {
+          std::cout << command << '\n';
+        }
+      },
+      "Shows the past ran commands & math expressions."
+  );
+  interface.add(
+      "clear", []() { std::cout << "\033[2J\033[1;1H"; }, "Clears the screen."
+  );
+  interface.add(
+      "help",
+      [&interface]() {
+        std::cout << "Copyright [2024] [Acream]" << '\n';
+        std::cout << "Acalc is a lightweight, lightning-fast mathematical calculator designed for Unix terminals."
+                  << '\n'
+                  << "Powered by Exprtk, it brings advanced mathematical capabilities directly to your command line."
+                  << '\n';
+        std::cout << "Commands: " << '\n';
+        std::map<std::string, std::string> commands = interface.aboutCommands();
+        for (const auto &[command, description] : commands) {
+          std::cout << interface.symbol() << command << " - " << description << '\n';
+        }
+      },
+      "Shows information to help you."
+  );
 
   while (true) {
     std::string input = interface.getInput();
