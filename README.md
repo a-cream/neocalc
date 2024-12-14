@@ -1,6 +1,6 @@
-# Acalc: A Powerful Terminal-Based Calculator
+# Neocalc: A Powerful Terminal-Based Calculator
 
-Acalc is a lightweight, lightning-fast mathematical calculator designed for Unix terminals. Powered by Exprtk, it brings advanced mathematical capabilities directly to your command line.
+Neocalc is a lightweight, lightning-fast mathematical calculator designed for Unix terminals. Powered by Exprtk, it brings advanced mathematical capabilities directly to your command line.
 
 ## 🚀 Key Features
 
@@ -18,7 +18,7 @@ Acalc is a lightweight, lightning-fast mathematical calculator designed for Unix
 ### Compilation Steps
 ```bash
 # Clone the repository
-git clone https://github.com/a-cream/acalc.git
+git clone https://github.com/a-cream/neocalc.git
 cd acalc
 
 # Build the project
@@ -43,7 +43,7 @@ cmake -S . -B build && cmake --build build
 
 ## 🧮 Supported Operations
 
-Acalc supports a wide range of mathematical operations through Exprtk, including:
+Neocalc supports a wide range of mathematical operations through Exprtk, including:
 - Arithmetic operations
 - Trigonometric functions
 - Logarithmic functions

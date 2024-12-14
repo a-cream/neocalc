@@ -24,7 +24,7 @@ auto main() -> int {
       "help",
       [&interface]() {
         std::cout << "Copyright [2024] [Acream]" << '\n';
-        std::cout << "Acalc is a lightweight, lightning-fast mathematical calculator designed for Unix terminals."
+        std::cout << "Neocalc is a lightweight, lightning-fast mathematical calculator designed for Unix terminals."
                   << '\n'
                   << "Powered by Exprtk, it brings advanced mathematical capabilities directly to your command line."
                   << '\n';
