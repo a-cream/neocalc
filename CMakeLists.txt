@@ -10,14 +10,14 @@ include_directories(${PROJECT_SOURCE_DIR}/include/vendor)
 
 set(SOURCES
   src/main.cpp
-  src/acalc/interface/interface.cpp
+  src/neocalc/interface/interface.cpp
 )
 
 set(INCLUDE
-  include/acalc/interface/interface.hpp
-  include/acalc/math/math.hpp
+  include/neocalc/interface/interface.hpp
+  include/neocalc/math/math.hpp
 )
 
-add_executable(acalc ${SOURCES})
+add_executable(neocalc ${SOURCES})
 
-target_include_directories(acalc PRIVATE ${PROJECT_SOURCE_DIR}/include/vendor)
+target_include_directories(neocalc PRIVATE ${PROJECT_SOURCE_DIR}/include/vendor)

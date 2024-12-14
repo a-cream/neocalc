@@ -1,4 +1,4 @@
-#include "../../../include/acalc/interface/interface.hpp"
+#include "../../../include/neocalc/interface/interface.hpp"
 #include <iostream>
 
 Interface::Interface(const std::string &prompt, char symbol) : m_prompt(prompt), m_symbol(symbol){};

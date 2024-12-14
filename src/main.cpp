@@ -1,5 +1,5 @@
-#include "../include/acalc/interface/interface.hpp"
-#include "../include/acalc/math/math.hpp"
+#include "../include/neocalc/interface/interface.hpp"
+#include "../include/neocalc/math/math.hpp"
 
 auto main() -> int {
   Interface interface(">", '@');
